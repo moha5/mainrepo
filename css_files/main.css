@@ -1,0 +1,62 @@
+body {
+    background: url("/photos/background_img.jpeg") center center fixed;
+    background-repeat: no-repeat;
+    background-size: cover;   
+    margin: 0;
+}
+
+main {
+    color: #1b1b32;
+    font-family: Helvetica;
+    margin: 0;
+}
+
+header {
+    height: 50px;
+    display: flex;
+    padding: 5px;
+    justify-content: space-between;
+    top: 0;
+}
+
+header {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
+    border-bottom-left-radius: 20px; 
+    border-bottom-right-radius: 20px; 
+    border-bottom:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.logophoto img {
+    width: 52px;
+    padding: 2px;
+    padding-left: 8px;
+    border-radius: 15px;
+}
+
+.h1header img {
+    align-items: center;
+    width: 200px;
+    height: 55px;
+}
+
+.headertext {
+    align-items: center;
+    display: flex;
+}
+
+.headertext div {
+    padding-right: 30px;
+    font-size: 1.2em;
+}
+.headertext a {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    text-decoration: none;
+    padding: 0;
+    color: rgba(128, 128, 128, 0.747);
+    display: flex;
+    
+}
