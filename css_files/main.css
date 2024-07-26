@@ -1,3 +1,7 @@
+html{
+    height: 100%;
+}
+
 body {
     background: url("/photos/background_img.jpg") center center fixed;
     background-repeat: no-repeat;
@@ -11,6 +15,8 @@ main {
     margin: 0;
 }
 
+/*----------------------section of header----------------------*/
+
 header {
     height: 50px;
     display: flex;
@@ -20,6 +26,7 @@ header {
     right: 0;
     left: 0;
     position: fixed;
+    z-index: 0;
 }
 
 /*Glass effect*/
@@ -27,7 +34,7 @@ header {
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
     backdrop-filter: blur(10px); 
     -webkit-backdrop-filter: blur(10px); 
-    border-bottom-left-radius: 20px; 
+    border-bottom-left-radius: 1px; 
     border-bottom-right-radius: 20px; 
     border-bottom:1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
@@ -63,4 +70,82 @@ header {
     color: rgba(243, 255, 175, 0.703);
     display: flex;
     
+}
+
+/*----------------------section of nav----------------------*/
+
+nav {
+    min-width: 250px;
+    height: 100%;
+    padding-top: 33px;
+    position: fixed;
+    z-index: 1;
+}
+
+.nav-box {
+    height: 100%;
+}
+
+/* Glass Effect */
+
+.nav-box {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px);  
+    border-bottom-right-radius: 20px; 
+    border-right: 3px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.h1_nav {
+    color: whitesmoke;
+    font-size: 2.1rem;
+    font-family: monospace;
+    padding: 20px;
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.menu-nav {
+    font-family: sans-serif;
+}
+
+.nav-list {
+    padding-left: 15px;
+    margin-top: -5px;
+}
+
+.nav-list img {
+    width: 20px;
+    pointer-events: none;
+}
+
+.nav-box li {
+    list-style: none;
+    padding: 5px 10px;
+}
+
+/* Glass Effect */
+
+.nav-list div :hover {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
+    border-radius: 9px; 
+    border: 3px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    height: 30px;
+    transition: 40ms;
+    font-size: 1.4em;
+}
+
+.nav-list li:first-of-type {
+    margin-top: 10px;
+}
+
+.nav-box a {
+    color: rgba(239, 239, 239, 0.916);
+    text-decoration: none;
+    display: block;
+    padding: 5px 10px;
 }
