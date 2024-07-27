@@ -80,6 +80,7 @@ nav {
     padding-top: 33px;
     position: fixed;
     z-index: 1;
+    top: 0;
 }
 
 .nav-box {
@@ -98,7 +99,7 @@ nav {
 }
 
 .h1_nav {
-    color: whitesmoke;
+    color: rgba(218, 253, 253, 0.689);
     font-size: 2.1rem;
     font-family: monospace;
     padding: 20px;
@@ -148,4 +149,79 @@ nav {
     text-decoration: none;
     display: block;
     padding: 5px 10px;
+}
+
+/* ----------------------main---------------------- */
+
+.main_section {
+    margin-left: 265px;
+    display: block;
+    margin-right: 30px;
+    margin-top: 120px;
+}
+
+/* ----------------------section---------------------- */
+
+.h1_section {
+    font-size: 30px;
+    margin-left: 50px;
+    color: rgba(218, 253, 253, 0.689);
+}
+.h1_section h1:first-of-type {
+    margin-bottom: 0;
+}
+
+.h1_section h1:last-of-type {
+    margin-top: 0;
+}
+
+.main_p {
+    font-family: monospace;
+    color: rgba(239, 239, 239, 0.916);
+    margin-left: 35px;
+    line-height: 20px;
+}
+
+.main_p a {
+    text-decoration: none;
+    color: rgba(239, 239, 239, 0.916);;
+}
+
+.socialm_box {
+    margin-left: 35px;
+}
+
+.socialm_box div{
+    margin-top: 15px;
+    font-size: 27px;
+    width: 220px;
+    padding: 10px 10px;
+    display: flex;
+}
+
+/* Glass Effect */
+
+.instabox ,.facebookbox ,.Xbox {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px);  
+    border-radius: 20px; 
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.socialm_box img{
+    width: 29px;
+    height: 29px;
+    width: auto;
+}
+.socialm_box a {
+    text-decoration: none;
+    color: rgba(231, 102, 231, 0.632);
+    display: block;
+    width: 250px;
+}
+
+.socialm_box a:first-of-type {
+    width: auto;
+    padding-right: 8git px;
 }
