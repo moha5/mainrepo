@@ -26,7 +26,7 @@ header {
     right: 0;
     left: 0;
     position: fixed;
-    z-index: 0;
+    z-index: 1;
 }
 
 /*Glass effect*/
@@ -202,11 +202,8 @@ nav {
 /* Glass Effect */
 
 .instabox ,.facebookbox ,.Xbox {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-    backdrop-filter: blur(10px); 
-    -webkit-backdrop-filter: blur(10px);  
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
     border-radius: 20px; 
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
 .socialm_box img{
@@ -230,6 +227,7 @@ nav {
 
 article {
     margin-top: 90px;
+    margin-left: 15px;
     padding: 20px;
     padding-bottom: 5px;
 }
@@ -371,4 +369,49 @@ h2 {
     .card:not(:last-child) {
       margin-right: 40px;
     }
+}
+
+/* h1 final */
+
+.h1_final {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: rgba(240, 248, 255, 0.694);
+    font-size: 2.3rem;
+}
+
+/* ----------------------footer---------------------- */
+
+footer {
+    height: 170px;
+    background-color: #1b1b32c0;
+    backdrop-filter: blur(15px);
+    margin-left: 250px;
+    padding: 30px;
+    font-family: monospace;
+    color: rgba(239, 239, 239, 0.916);
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.right_footer {
+    font-size: 0.8rem;
+    align-items: left;
+}
+
+.right_footer img {
+    width: 30px;
+}
+
+.left-footer img {
+    width: 50px;
+    margin-left: 75px;
+}
+
+.footer p {
+    display: block;
 }
